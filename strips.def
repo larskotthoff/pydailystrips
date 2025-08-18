@@ -121,31 +121,11 @@
 # NOTE: Strip and group names are always converted to lowercase in
 # the code.
 
-group cj
-    achewood
-    basicinstructions
-    buttersafe
-    calvinandhobbes
-    dinosaur
-    foxtrot
-    indexed
-    marriedtothesea
-    poorlydrawnlines
-    questionablecontent
-    smbc
-    toothpastefordinner
-    warandpeas
-    wondermark
+group akiba
+    garfield
     xkcd
-    zits
-    darkscience
-    dieselsweeties
-    vagrant
-    jsph
-    nedroid
-    pbf
-    redmeat
-    sfam
+    nonsequitur
+    calvinandhobbes
 end
 
 strip achewood
@@ -181,11 +161,30 @@ strip buttersafe
     searchpattern <img src="(?P<result>https?://(www\.)?buttersafe.com/comics/\d+-\d+-\d+[- ].*?\.(gif|jpe?g|png))"
 end
 
+strip garfield
+    name Garfield
+    artist Jim Davis
+    homepage https://www.gocomics.com/garfield/
+    searchpage https://www.gocomics.com/garfield/%Y/%m/%d
+    searchpattern meta property="og:image" content="(?P<result>https://featureassets.gocomics.com/assets/[^ "\\]+)"
+end
+
 strip calvinandhobbes
     name Calvin and Hobbes
     artist Bill Watterson
     homepage https://www.gocomics.com/calvinandhobbes/
-    searchpattern src="(?P<result>https://featureassets.gocomics.com/.*?)"
+    searchpage https://www.gocomics.com/calvinandhobbes/%Y/%m/%d
+    #searchpattern "url\\*":\\*"(?P<result>https://featureassets.gocomics.com/[^ "\\]+)\\*"
+    searchpattern meta property="og:image" content="(?P<result>https://featureassets.gocomics.com/assets/[^ "\\]+)"
+end
+
+strip nonsequitur
+    name nonsequitur
+    artist Wiley Miller
+    homepage https://www.gocomics.com/nonsequitur/
+    searchpage https://www.gocomics.com/nonsequitur/%Y/%m/%d
+    #searchpattern "url\\*":\\*"(?P<result>https://featureassets.gocomics.com/[^ "\\]+)\\*"
+    searchpattern meta property="og:image" content="(?P<result>https://featureassets.gocomics.com/assets/[^ "\\]+)"
 end
 
 strip darkscience
