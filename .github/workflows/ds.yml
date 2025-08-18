@@ -42,7 +42,7 @@ jobs:
     
     - name: Run pydailystrips
       run: |
-        pydailystrips -g akiba -c strips.def -d public
+        ./pydailystrips.py -g akiba -c strips.def -d public
         
     - name: Setup Pages
       uses: actions/configure-pages@v5
