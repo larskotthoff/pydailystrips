@@ -385,6 +385,7 @@ class Strip(object):
                 print('')
             return
         if verbose:
+            print(page_lines)
             if self.intermediate_pattern:
                 print('HTML successfully retrieved')
             else:

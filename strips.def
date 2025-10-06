@@ -166,7 +166,7 @@ strip garfield
     artist Jim Davis
     homepage https://www.gocomics.com/garfield/
     searchpage https://www.gocomics.com/garfield/%Y/%m/%d
-    searchpattern srcset="https://featureassets.gocomics.com/assets/[^"\\]+" src="(?P<result>https://featureassets.gocomics.com/assets/[^ "\\]+)"
+    searchpattern meta property="og:image" content="(?P<result>https://featureassets.gocomics.com/assets/[^ "\\]+)"
 end
 
 strip calvinandhobbes
@@ -175,7 +175,7 @@ strip calvinandhobbes
     homepage https://www.gocomics.com/calvinandhobbes/
     searchpage https://www.gocomics.com/calvinandhobbes/%Y/%m/%d
     #searchpattern "url\\*":\\*"(?P<result>https://featureassets.gocomics.com/[^ "\\]+)\\*"
-    searchpattern srcset="https://featureassets.gocomics.com/assets/[^"\\]+" src="(?P<result>https://featureassets.gocomics.com/assets/[^ "\\]+)"
+    searchpattern meta property="og:image" content="(?P<result>https://featureassets.gocomics.com/assets/[^ "\\]+)"
 end
 
 strip nonsequitur
@@ -184,7 +184,7 @@ strip nonsequitur
     homepage https://www.gocomics.com/nonsequitur/
     searchpage https://www.gocomics.com/nonsequitur/%Y/%m/%d
     #searchpattern "url\\*":\\*"(?P<result>https://featureassets.gocomics.com/[^ "\\]+)\\*"
-    searchpattern srcset="https://featureassets.gocomics.com/assets/[^"\\]+" src="(?P<result>https://featureassets.gocomics.com/assets/[^ "\\]+)"
+    searchpattern meta property="og:image" content="(?P<result>https://featureassets.gocomics.com/assets/[^ "\\]+)"
 end
 
 strip darkscience
