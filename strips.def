@@ -2,7 +2,7 @@
 #
 # Whitespace on both sides of each line is ignored, so indentation
 # is only for human purposes.  Lines whose first real char is a hash
-# will be ignored (ie: comments). 
+# will be ignored (ie: comments).
 #
 # A "strip" stanza with all options defined looks like:
 #
@@ -135,10 +135,10 @@ strip achewood
     searchpattern <img class="comicImage" src="(?P<result>.*?/\d+\.(png|gif|jpg))"
     baseurl $homepage
     extra_txt Title Text|<img class="comicImage" .*title="(?P<result>.*?)"
-end 
+end
 
-strip basicinstructions 
-    name Basic Instructions 
+strip basicinstructions
+    name Basic Instructions
     artist Scott Meyer
     homepage http://www.basicinstructions.net/
     searchpattern src="(?P<result>https://images.squarespace-cdn.com/.*?\.(gif|jpg|png))"
@@ -165,26 +165,24 @@ strip garfield
     name Garfield
     artist Jim Davis
     homepage https://www.gocomics.com/garfield/
-    searchpage https://www.gocomics.com/garfield/%Y/%m/%d
-    searchpattern meta property="og:image" content="(?P<result>https://featureassets.gocomics.com/assets/[^ "\\]+)"
+    searchpage https://comiccaster.xyz/rss/garfield
+    searchpattern enclosure url="(?P<result>https://featureassets.gocomics.com/assets/[^ "]+)"
 end
 
 strip calvinandhobbes
     name Calvin and Hobbes
     artist Bill Watterson
     homepage https://www.gocomics.com/calvinandhobbes/
-    searchpage https://www.gocomics.com/calvinandhobbes/%Y/%m/%d
-    #searchpattern "url\\*":\\*"(?P<result>https://featureassets.gocomics.com/[^ "\\]+)\\*"
-    searchpattern meta property="og:image" content="(?P<result>https://featureassets.gocomics.com/assets/[^ "\\]+)"
+    searchpage https://comiccaster.xyz/rss/calvinandhobbes
+    searchpattern enclosure url="(?P<result>https://featureassets.gocomics.com/assets/[^ "]+)"
 end
 
 strip nonsequitur
     name nonsequitur
     artist Wiley Miller
     homepage https://www.gocomics.com/nonsequitur/
-    searchpage https://www.gocomics.com/nonsequitur/%Y/%m/%d
-    #searchpattern "url\\*":\\*"(?P<result>https://featureassets.gocomics.com/[^ "\\]+)\\*"
-    searchpattern meta property="og:image" content="(?P<result>https://featureassets.gocomics.com/assets/[^ "\\]+)"
+    searchpage https://comiccaster.xyz/rss/nonsequitur
+    searchpattern enclosure url="(?P<result>https://featureassets.gocomics.com/assets/[^ "]+)"
 end
 
 strip darkscience
@@ -196,7 +194,7 @@ strip darkscience
     onhold
 end
 
-strip dieselsweeties 
+strip dieselsweeties
     name Diesel Sweeties
     artist rstevens
     homepage http://dieselsweeties.com
