@@ -412,7 +412,7 @@ strip xkcd
     homepage http://www.xkcd.com/
     searchpattern src="//imgs.xkcd.com(?P<result>/comics/.*?\.(png|jpg|gif))"
     baseurl http://imgs.xkcd.com
-    extra_txt Title Text|<img src=.*title="(?P<result>.*?)"
+    extra_txt Title Text|<img src="//imgs.xkcd.com/comics/.*?".*title="(?P<result>.*?)"
 end
 
 # On 2024-02-29, the delivery format at comicskingdom.com was changed pretty
